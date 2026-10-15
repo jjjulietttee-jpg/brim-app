@@ -1,32 +1,196 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Brim — Creatine Tracker</title>
-<meta name="description" content="Brim tracks muscle creatine saturation, not streaks. Support, privacy policy and terms." />
-<link rel="stylesheet" href="/style.css" />
+<meta name="generator" content="app_farm ai_site scaffold" />
+<title>Brim: Creatine Tracker — Creatine tracker that shows muscle saturation</title>
+<meta name="description" content="Brim is an iPhone creatine tracker built around one number: muscle saturation. It rises when you take your dose and falls when you skip, using a model…" />
+<link rel="canonical" href="https://jjjulietttee-jpg.github.io/brim-app/" />
+<meta name="robots" content="index, follow, max-snippet:-1" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Brim" />
+<meta property="og:title" content="Brim: Creatine Tracker — Creatine tracker that shows muscle saturation" />
+<meta property="og:description" content="Brim is an iPhone creatine tracker built around one number: muscle saturation. It rises when you take your dose and falls when you skip, using a model…" />
+<meta property="og:url" content="https://jjjulietttee-jpg.github.io/brim-app/" />
+<meta property="og:image" content="https://jjjulietttee-jpg.github.io/brim-app/app-icon.png" />
+<meta name="twitter:card" content="summary" />
+<meta name="apple-itunes-app" content="app-id=6795123559, app-argument=https://apps.apple.com/app/id6795123559?pt=128839649&amp;ct=ai_web" />
+<meta name="theme-color" content="#F7F7F5" />
+<link rel="icon" href="https://jjjulietttee-jpg.github.io/brim-app/app-icon.png" type="image/png" />
+<link rel="apple-touch-icon" href="https://jjjulietttee-jpg.github.io/brim-app/app-icon.png" />
+<style>
+:root{color-scheme:light dark;--space-1:8px;--space-2:16px;--space-3:24px;--space-4:40px;--space-5:64px;--radius-sm:12px;--radius-md:18px;--radius-pill:999px;--measure:760px;--font:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;--font-size:17px;--font-size-lede:19px;--font-size-small:14px;--bg:#F7F7F5;--surface:#FFFFFF;--surface-soft:#F0F0EC;--text:#1B1B1A;--text-secondary:#5F5F5A;--border:rgba(0,0,0,.09);--accent:#4FE3C1;--on-accent:#111111;--accent-strong:#44C3A6;--accent-tint:rgba(79,227,193,.09)}
+@media (prefers-color-scheme:dark){:root{--bg:#111112;--surface:#18181A;--surface-soft:#1F1F22;--text:#F2F2F0;--text-secondary:#A2A29C;--border:rgba(255,255,255,.09);--accent:#4FE3C1;--on-accent:#111111;--accent-strong:#68E7CA;--accent-tint:rgba(79,227,193,.09)}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);font-size:var(--font-size);line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:var(--accent)}
+.wrap{max-width:var(--measure);margin:0 auto;padding:0 var(--space-2)}
+header.top{display:flex;justify-content:space-between;align-items:center;gap:var(--space-2);max-width:var(--measure);margin:0 auto;padding:var(--space-2)}
+.brand{display:flex;align-items:center;gap:var(--space-1);font-weight:700;color:var(--text);text-decoration:none}
+.brand img{width:28px;height:28px;border-radius:7px}
+.btn{display:inline-block;background:var(--accent);color:var(--on-accent);font-weight:700;text-decoration:none;padding:12px 22px;border-radius:var(--radius-pill)}
+.btn:hover{background:var(--accent-strong)}
+.btn--sm{padding:8px 16px;font-size:15px}
+h1{font-size:clamp(30px,6vw,44px);line-height:1.15;margin:var(--space-4) 0 var(--space-2);letter-spacing:-.02em}
+h2{font-size:26px;line-height:1.25;margin:var(--space-5) 0 var(--space-2)}
+h3{font-size:19px;margin:var(--space-3) 0 var(--space-1)}
+.lede{font-size:var(--font-size-lede);color:var(--text-secondary)}
+.meta,.note{color:var(--text-secondary);font-size:var(--font-size-small)}
+.answer{background:var(--surface-soft);border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:var(--radius-md);padding:var(--space-2) var(--space-3);margin:var(--space-3) 0}
+.cards{list-style:none;padding:0;display:grid;gap:var(--space-2);grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.cards li{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-md);padding:var(--space-2)}
+.cards b{display:block;margin-bottom:4px}
+.cards a{text-decoration:none;font-weight:600}
+ol.steps{padding-left:0;list-style:none;counter-reset:s}
+ol.steps li{counter-increment:s;position:relative;padding:var(--space-2) var(--space-2) var(--space-2) 64px;margin:var(--space-2) 0;background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--radius-md)}
+ol.steps li::before{content:counter(s);position:absolute;left:var(--space-2);top:var(--space-2);width:36px;height:36px;border-radius:50%;background:var(--accent);color:var(--on-accent);font-weight:800;display:grid;place-items:center}
+ol.steps b{display:block}
+.tablewrap{overflow-x:auto;border:1px solid var(--border);border-radius:var(--radius-md)}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:15px}
+th,td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--border);vertical-align:top}
+th{color:var(--text-secondary);font-weight:600;background:var(--surface)}
+tr:last-child td{border-bottom:0}
+tr.me td{background:var(--accent-tint)}
+details{background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--radius-md);padding:var(--space-2);margin:var(--space-1) 0}
+summary{cursor:pointer;font-weight:600}
+details p{margin:var(--space-1) 0 0;color:var(--text-secondary)}
+.cta{text-align:center;margin:var(--space-5) 0;padding:var(--space-4) var(--space-2);background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-md)}
+footer{max-width:var(--measure);margin:var(--space-5) auto var(--space-4);padding:0 var(--space-2);color:var(--text-secondary);font-size:var(--font-size-small)}
+footer a{color:var(--text-secondary)}
+@media (max-width:480px){h2{font-size:22px}ol.steps li{padding-left:56px}.answer{padding:var(--space-2)}}
+
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "SoftwareApplication",
+ "name": "Brim: Creatine Tracker",
+ "alternateName": "Brim",
+ "operatingSystem": "iOS",
+ "applicationCategory": "Health & Fitness",
+ "url": "https://jjjulietttee-jpg.github.io/brim-app/",
+ "description": "Brim is an iPhone creatine tracker built around one number: muscle saturation. It rises when you take your dose and falls when you skip, using a model fitted to the ISSN 2017 position stand, and shows the date you reach full saturation. Logging is free, there is no account, and it works in 14…",
+ "offers": {
+  "@type": "Offer",
+  "price": "0",
+  "priceCurrency": "USD",
+  "category": "Freemium"
+ },
+ "downloadUrl": "https://apps.apple.com/app/id6795123559?pt=128839649&ct=ai_web",
+ "image": "https://jjjulietttee-jpg.github.io/brim-app/app-icon.png",
+ "publisher": {
+  "@type": "Person",
+  "name": "Brim"
+ }
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "How does Brim work out my dose?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "From your body weight. The maintenance dose follows the ISSN range of 3-5 g per day (about 0.03 g/kg), banded so that heavier people get more, and the loading dose is about 0.3 g/kg per day, rounded to the nearest 5 g and capped at 30 g."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Is Brim free?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Logging a dose is free. Brim Pro unlocks the saturation forecast, full history and calendar, adaptive reminders, the full article library and the Home Screen widget: $4.99 per month or $29.99 per year, each with a 3-day free trial."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Is the saturation number a medical measurement?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "No. It is an estimate from a published kinetics model fitted to the ISSN 2017 position stand, not a blood or muscle test. Brim says so in the app and is not medical advice."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Is Brim medical advice?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "No. It is an informational estimate based on published research, not a diagnosis or a substitute for a doctor."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Does Brim use AI?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "No."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Does it track water or other supplements?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "No, creatine only."
+   }
+  }
+ ]
+}
+</script>
 </head>
 <body>
-  <div class="wrap">
-    <div class="brand"><span class="mark"></span>Brim</div>
-    <h1>Creatine, measured properly</h1>
-    <p>Brim tracks how full your muscle creatine stores actually are — a number that rises when you take your dose and falls when you skip, instead of a streak counter that resets to zero. It runs entirely on your phone, on iPhone and on Android.</p>
+<header class="top">
+  <a class="brand" href="https://jjjulietttee-jpg.github.io/brim-app/"><img src="https://jjjulietttee-jpg.github.io/brim-app/app-icon.png" alt="" width="28" height="28" />Brim</a>
+  <a class="btn btn--sm" href="https://apps.apple.com/app/id6795123559?pt=128839649&amp;ct=ai_web">Get the App</a>
+</header>
+<main class="wrap">
+  <article>
+    <h1>Creatine tracker that shows muscle saturation</h1>
+    <p class="lede">Brim is an iPhone creatine tracker built around one number: muscle saturation. It rises when you take your dose and falls when you skip, using a model fitted to the ISSN 2017 position stand, and shows the date you reach full saturation. Logging is free, there is no account, and it works in 14 languages.</p>
+    <p><a class="btn" href="https://apps.apple.com/app/id6795123559?pt=128839649&amp;ct=ai_web">Download Brim on the App Store</a></p>
+    <h2>What Brim does</h2>
+    <ul class="cards">
+      <li><b>Saturation percentage</b>A 0-100% estimate that rises on dosing days and decays on skipped days, fitted to the ISSN 2017 position stand.</li>
+      <li><b>Date of full saturation</b>Pro shows when your stores are projected to be full, for standard or loading protocol.</li>
+      <li><b>One-tap logging</b>Log a dose in one tap; logging is free.</li>
+      <li><b>Weight-based dose</b>Maintenance and loading doses are calculated from your body weight.</li>
+      <li><b>Home Screen widget</b>Pro: ring and day state at a glance.</li>
+      <li><b>Apple Health (read-only)</b>Reads body weight and workouts; writes nothing.</li>
+      <li><b>Articles with sources</b>Explainers on creatine research; four are free, the full library is Pro.</li>
+      <li><b>14 languages</b>Available in 14 languages, no account required.</li>
 
-    <ul class="links">
-      <li><a href="/support.html">Support &amp; FAQ<span>Common questions, and how to reach a human</span></a></li>
-      <li><a href="/privacy.html">Privacy Policy<span>What Brim stores, and what it never touches</span></a></li>
-      <li><a href="/terms.html">Terms of Use<span>Licence, subscriptions and the health disclaimer</span></a></li>
     </ul>
+    <h2>Guides</h2>
+    <ul class="cards">
+      <li><a href="https://jjjulietttee-jpg.github.io/brim-app/how-to-track-creatine-intake-on-iphone">How to Track Creatine Intake on iPhone</a><br /><span class="note">Log your daily creatine in one tap on iPhone and see how saturated your muscles are, with an honest comparison of the creatine tracker apps on the App Store.</span></li>
+      <li><a href="https://jjjulietttee-jpg.github.io/brim-app/how-to-remember-to-take-creatine-every-day">How to Remember to Take Creatine Every Day</a><br /><span class="note">Practical ways to stop forgetting creatine, and what happens to your muscle saturation on days you skip.</span></li>
+      <li><a href="https://jjjulietttee-jpg.github.io/brim-app/creatine-saturation-calculator-app">Creatine Saturation Calculator for iPhone</a><br /><span class="note">How a creatine saturation estimate works, what Brim&#x27;s model assumes, and which apps show one.</span></li>
+      <li><a href="https://jjjulietttee-jpg.github.io/brim-app/how-long-does-creatine-loading-take">How Long Does Creatine Loading Take?</a><br /><span class="note">Loading versus 3-5 g a day: how long each takes to saturate muscle, and how to track it on iPhone.</span></li>
 
-    <div class="note warn">
-      <p>Brim is an informational and tracking tool, not a medical device. It does not diagnose, treat or prevent any condition. Talk to a qualified healthcare professional before starting any supplement.</p>
-    </div>
+    </ul>
+        <h2>Price</h2>
+    <p>Logging doses is free. Brim Pro: $4.99/month or $29.99/year, each with a 3-day free trial; unlocks the saturation forecast, full history and calendar, adaptive reminders, the full article library and the Home Screen widget.</p>
 
-    <footer>
-      Contact: <a href="mailto:nastya.shchaveleva@internet.ru">nastya.shchaveleva@internet.ru</a><br />
-      © 2026 Brim. All rights reserved.
-    </footer>
-  </div>
+        <h2>Frequently asked questions</h2>
+    <details open><summary>How does Brim work out my dose?</summary><p>From your body weight. The maintenance dose follows the ISSN range of 3-5 g per day (about 0.03 g/kg), banded so that heavier people get more, and the loading dose is about 0.3 g/kg per day, rounded to the nearest 5 g and capped at 30 g.</p></details>
+    <details><summary>Is Brim free?</summary><p>Logging a dose is free. Brim Pro unlocks the saturation forecast, full history and calendar, adaptive reminders, the full article library and the Home Screen widget: $4.99 per month or $29.99 per year, each with a 3-day free trial.</p></details>
+    <details><summary>Is the saturation number a medical measurement?</summary><p>No. It is an estimate from a published kinetics model fitted to the ISSN 2017 position stand, not a blood or muscle test. Brim says so in the app and is not medical advice.</p></details>
+    <details><summary>Is Brim medical advice?</summary><p>No. It is an informational estimate based on published research, not a diagnosis or a substitute for a doctor.</p></details>
+    <details><summary>Does Brim use AI?</summary><p>No.</p></details>
+    <details><summary>Does it track water or other supplements?</summary><p>No, creatine only.</p></details>
+
+
+    <div class="cta"><a class="btn" href="https://apps.apple.com/app/id6795123559?pt=128839649&amp;ct=ai_web">Try Brim on your iPhone</a><p class="note">Free to download on the App Store.</p></div>
+
+  </article>
+
+</main>
+<footer>
+  <a href="https://jjjulietttee-jpg.github.io/brim-app/">Brim</a> · <a href="https://jjjulietttee-jpg.github.io/brim-app/privacy.html">Privacy</a> · <a href="https://jjjulietttee-jpg.github.io/brim-app/terms.html">Terms</a> · <a href="https://jjjulietttee-jpg.github.io/brim-app/support.html">Support</a>
+</footer>
 </body>
 </html>

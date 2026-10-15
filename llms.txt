@@ -1,0 +1,23 @@
+# Brim
+
+> Forecast, history and reminders
+
+Brim: Creatine Tracker — Creatine tracker. iPhone app, available on the App Store: https://apps.apple.com/app/id6795123559?pt=128839649&ct=ai_web
+
+## Guides
+
+- [Creatine Saturation Calculator for iPhone](https://jjjulietttee-jpg.github.io/brim-app/creatine-saturation-calculator-app): How a creatine saturation estimate works, what Brim's model assumes, and which apps show one.
+- [How Long Does Creatine Loading Take?](https://jjjulietttee-jpg.github.io/brim-app/how-long-does-creatine-loading-take): Loading versus 3-5 g a day: how long each takes to saturate muscle, and how to track it on iPhone.
+- [How to Remember to Take Creatine Every Day](https://jjjulietttee-jpg.github.io/brim-app/how-to-remember-to-take-creatine-every-day): Practical ways to stop forgetting creatine, and what happens to your muscle saturation on days you skip.
+- [How to Track Creatine Intake on iPhone](https://jjjulietttee-jpg.github.io/brim-app/how-to-track-creatine-intake-on-iphone): Log your daily creatine in one tap on iPhone and see how saturated your muscles are, with an honest comparison of the creatine tracker apps on the App…
+
+## App
+
+- [Home](https://jjjulietttee-jpg.github.io/brim-app/): what Brim does, features, pricing
+- [App Store](https://apps.apple.com/app/id6795123559?pt=128839649&ct=ai_web): download, screenshots, reviews
+
+## Optional
+
+- [Privacy](https://jjjulietttee-jpg.github.io/brim-app/privacy)
+- [Support](https://jjjulietttee-jpg.github.io/brim-app/support)
+- [Terms](https://jjjulietttee-jpg.github.io/brim-app/terms)

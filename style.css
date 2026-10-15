@@ -1,0 +1,140 @@
+:root {
+  --bg: #08080A;
+  --card: #101012;
+  --line: #1E1E22;
+  --text: #F4F6F7;
+  --body: #D8DBDD;
+  --muted: #8A8F94;
+  --accent: #4FE3C1;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, sans-serif;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 56px 24px 96px;
+}
+
+h1 {
+  font-size: 32px;
+  letter-spacing: -0.025em;
+  margin: 0 0 6px;
+}
+
+h2 {
+  font-size: 19px;
+  letter-spacing: -0.01em;
+  margin: 38px 0 10px;
+}
+
+h3 {
+  font-size: 16px;
+  margin: 24px 0 6px;
+}
+
+p, li { color: var(--body); }
+
+.eff {
+  color: var(--muted);
+  margin: 0 0 34px;
+  font-size: 14px;
+}
+
+.muted { color: var(--muted); }
+
+a { color: var(--accent); }
+
+ul { padding-left: 20px; }
+
+li { margin: 6px 0; }
+
+.back {
+  display: inline-block;
+  margin-bottom: 28px;
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.back:hover { text-decoration: underline; }
+
+/* Callout for the things a reviewer or a worried user looks for first:
+   the health disclaimer and the HealthKit promise. */
+.note {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--accent);
+  border-radius: 14px;
+  padding: 16px 20px;
+  margin: 24px 0;
+}
+
+.note strong { color: var(--text); }
+
+.warn { border-left-color: #FF9F6B; }
+
+.mark {
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+  border-radius: 11px;
+  background: linear-gradient(160deg, #2E6BFF, #4FE3C1);
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.links {
+  list-style: none;
+  padding: 0;
+  margin: 28px 0 0;
+}
+
+.links li { margin: 0 0 12px; }
+
+.links a {
+  display: block;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 16px 20px;
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 600;
+}
+
+.links a:hover { border-color: #2E3238; }
+
+.links span {
+  display: block;
+  color: var(--muted);
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 2px;
+}
+
+footer {
+  margin-top: 56px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 13px;
+}
